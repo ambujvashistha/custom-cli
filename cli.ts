@@ -55,6 +55,15 @@ program
 })
 
 program
+.command("sqaure <n1>")
+.description("gives the sqaure of the number")
+.action(
+    (n1)=>{
+    const result = Number(n1)**2
+    console.log(`square of ${n1} is ${result}`)
+})
+
+program
 .command("joke")
 .description("lighten up your mood")
 .action(async ()=>{

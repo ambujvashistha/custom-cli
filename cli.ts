@@ -55,12 +55,21 @@ program
 })
 
 program
-.command("sqaure <n1>")
-.description("gives the sqaure of the number")
+.command("square <n1>")
+.description("gives the square of the number")
 .action(
     (n1)=>{
     const result = Number(n1)**2
     console.log(`square of ${n1} is ${result}`)
+})
+
+program
+.command("exponent <n1> <n2>")
+.description("gives the exponent of the number with another number")
+.action(
+    (n1,n2)=>{
+    const result = Number(n1)**Number(n2)
+    console.log(`exponent of ${n1} with ${n2} is ${result}`)
 })
 
 program
